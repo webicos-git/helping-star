@@ -38,12 +38,12 @@
 			.consider-wrapper {
 				list-style-type: none;
 			}
-      .doc-link a {
-        text-decoration: none;
-      }
-      .doc-wrapper {
-        padding-left: 1rem;
-      }
+			.doc-link a {
+				text-decoration: none;
+			}
+			.doc-wrapper {
+				padding-left: 1rem;
+			}
 		</style>
 	</head>
 	<body>
@@ -116,11 +116,17 @@
 						<ul class="aside-menu">
 							<li class="aside-menu__item">
 								<a class="aside-menu__link" href="#">Documents</a>
-                <ul class="doc-wrapper">
-                  <li class="doc-link"><a href="/docs/ATG, 12A.pdf" target="_blank">ATG, 12A</a></li>
-                  <li class="doc-link"><a href="/docs/NCSR.PDF" target="_blank">NCSR</a></li>
-                  <li class="doc-link"><a href="/docs/PAN.pdf" target="_blank">PAN Card</a></li>
-                </ul>
+								<ul class="doc-wrapper">
+									<li class="doc-link">
+										<a href="/docs/ATG, 12A.pdf" target="_blank">ATG, 12A</a>
+									</li>
+									<li class="doc-link">
+										<a href="/docs/CSR.PDF" target="_blank">CSR</a>
+									</li>
+									<li class="doc-link">
+										<a href="/docs/PAN.pdf" target="_blank">PAN Card</a>
+									</li>
+								</ul>
 							</li>
 							<!-- <li class="aside-menu__item">
 								<a class="aside-menu__link" href="about.html">Information</a>
@@ -233,8 +239,8 @@
 					<div class="promo-slider">
 						<div class="promo-slider__item promo-slider__item--style-1">
 							<picture>
-								<source srcset="img/promo_1.jpg" media="(min-width: 992px)" />
-								<img class="img--bg" src="img/promo_1.jpg" alt="img" />
+								<source srcset="img/bg/bg-1.png" media="(min-width: 992px)" />
+								<img class="img--bg" src="img/bg/bg-1.png" alt="img" />
 							</picture>
 							<div class="container">
 								<div class="row">
@@ -243,7 +249,9 @@
 											<div class="align-container__item">
 												<div class="promo-slider__wrapper-1">
 													<h2 class="promo-slider__title">
-														<span>Some people need help and we give it!</span>
+														<span style="font-family: Quicksand, sans-serif"
+															>Some people need help and we give it!</span
+														>
 													</h2>
 												</div>
 												<div class="promo-slider__wrapper-2">
@@ -269,8 +277,8 @@
 						</div>
 						<div class="promo-slider__item promo-slider__item--style-2">
 							<picture>
-								<source srcset="img/promo_2.jpg" media="(min-width: 992px)" />
-								<img class="img--bg" src="img/promo_2.jpg" alt="img" />
+								<source srcset="img/bg/bg-2.png" media="(min-width: 992px)" />
+								<img class="img--bg" src="img/bg/bg-2.png" alt="img" />
 							</picture>
 							<div class="container">
 								<div class="row">
@@ -305,8 +313,8 @@
 						</div>
 						<div class="promo-slider__item promo-slider__item--style-3">
 							<picture>
-								<source srcset="img/promo_3.jpg" media="(min-width: 992px)" />
-								<img class="img--bg" src="img/promo_3.jpg" alt="img" />
+								<source srcset="img/bg/bg-3.png" media="(min-width: 992px)" />
+								<img class="img--bg" src="img/bg/bg-3.png" alt="img" />
 							</picture>
 							<div class="container">
 								<div class="row">
@@ -400,15 +408,6 @@
 				<!-- about us start-->
 				<section class="section about-us about-us--blue" id="about">
 					<div class="container">
-						<div class="col-12 pb-5">
-							<h3 style="color: #fff">Major consideration from</h3>
-							<ul class="consider-wrapper d-flex justify-content-between my-5">
-								<li class="consider-name">Name-1</li>
-								<li class="consider-name">Name-2</li>
-								<li class="consider-name">Name-3</li>
-							</ul>
-							<hr style="background-color: #fff" />
-						</div>
 						<div class="row">
 							<div class="col-lg-4">
 								<div class="heading heading--primary">
@@ -547,17 +546,25 @@
 										</h6>
 									</div>
 									<div class="counter-item__lower">
-										<span class="js-counter">200</span><span>k</span>
+										<span
+											class="js-counter"
+											style="font-family: Quicksand, sans-serif"
+											>1000</span
+										><span style="font-family: Quicksand, sans-serif">+</span>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-4 text-center">
 								<div class="counter-item counter-item--style-3">
 									<div class="counter-item__top">
-										<h6 class="counter-item__title">Fund We Collected</h6>
+										<h6 class="counter-item__title">Villages Relieved</h6>
 									</div>
 									<div class="counter-item__lower">
-										<span class="js-counter">65</span><span>bil</span>
+										<span
+											class="js-counter"
+											style="font-family: Quicksand, sans-serif"
+											>12</span
+										><span style="font-family: Quicksand, sans-serif">+</span>
 									</div>
 								</div>
 							</div>
@@ -567,7 +574,11 @@
 										<h6 class="counter-item__title">Projects</h6>
 									</div>
 									<div class="counter-item__lower">
-										<span class="js-counter">100</span><span>k +</span>
+										<span
+											class="js-counter"
+											style="font-family: Quicksand, sans-serif"
+											>10</span
+										><span style="font-family: Quicksand, sans-serif">+</span>
 									</div>
 								</div>
 							</div>
@@ -623,12 +634,14 @@
 								<div class="heading heading--primary">
 									<span class="heading__pre-title">What we Did</span>
 									<h2 class="heading__title">
-										<span>Helpo</span> <span>Projects</span>
+										<span>Helping Star</span> <span>Projects</span>
 									</h2>
 									<p>
-										Sharksucker sea toad candiru rocket danio tilefish stingray
-										deepwater stingray Sacramento splittail, Canthigaster
-										rostrata. Midshipman dartfish Modoc sucker, yellowtai
+										We have worked in diversed areas and helped many poor and
+										needy people around different states and provided aid in
+										whatever way possible. We have successfully completed 20+
+										projects and are on the way to help more and more people
+										through our organization.
 									</p>
 								</div>
 							</div>
@@ -637,27 +650,9 @@
 							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
 						>
 							<div class="projects-masonry__img">
-								<img class="img--bg" src="img/projects_4.jpg" alt="img" />
+								<img class="img--bg" src="img/img1.png" alt="img" />
 								<div class="projects-masonry__inner">
-									<span class="projects-masonry__badge">Education</span>
-									<h3 class="projects-masonry__title">
-										<a href="cause-details.html"
-											>Help for Children of the East</a
-										>
-									</h3>
-									<p>
-										Murray cod clownfish American sole rockfish dojo loach
-										gulper, trout-perch footballfish, pelican eel. Spinefoot
-										coelacanth eagle ray
-									</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item">
-											<span>Goal: </span><span>25 000$</span>
-										</div>
-										<div class="projects-masonry__details-item">
-											<span>Date: </span><span>23 Jan'19</span>
-										</div>
-									</div>
+									<span class="projects-masonry__badge">Medical Relief</span>
 								</div>
 							</div>
 						</div>
@@ -665,27 +660,9 @@
 							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
 						>
 							<div class="projects-masonry__img">
-								<img class="img--bg" src="img/projects_5.jpg" alt="img" />
+								<img class="img--bg" src="img/img2.jpg" alt="img" />
 								<div class="projects-masonry__inner">
-									<span class="projects-masonry__badge">Education</span>
-									<h3 class="projects-masonry__title">
-										<a href="cause-details.html"
-											>Help for Children of the East</a
-										>
-									</h3>
-									<p>
-										Murray cod clownfish American sole rockfish dojo loach
-										gulper, trout-perch footballfish, pelican eel. Spinefoot
-										coelacanth eagle ray
-									</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item">
-											<span>Goal: </span><span>25 000$</span>
-										</div>
-										<div class="projects-masonry__details-item">
-											<span>Date: </span><span>23 Jan'19</span>
-										</div>
-									</div>
+									<span class="projects-masonry__badge">Disaster relief</span>
 								</div>
 							</div>
 						</div>
@@ -693,53 +670,9 @@
 							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
 						>
 							<div class="projects-masonry__img">
-								<img class="img--bg" src="img/projects_3.jpg" alt="img" />
-								<div class="projects-masonry__inner">
-									<span class="projects-masonry__badge">Food</span>
-									<h3 class="projects-masonry__title">
-										<a href="cause-details.html"
-											>Help for Children of the East</a
-										>
-									</h3>
-									<p>
-										Murray cod clownfish American sole rockfish dojo loach
-										gulper, trout-perch footballfish, pelican eel. Spinefoot
-										coelacanth eagle ray
-									</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item">
-											<span>Goal: </span><span>25 000$</span>
-										</div>
-										<div class="projects-masonry__details-item">
-											<span>Date: </span><span>23 Jan'19</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div
-							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
-						>
-							<div class="projects-masonry__img">
-								<img class="img--bg" src="img/projects_6.jpg" alt="img" />
+								<img class="img--bg" src="img/img3.jpg" alt="img" />
 								<div class="projects-masonry__inner">
 									<span class="projects-masonry__badge">Medicine</span>
-									<h3 class="projects-masonry__title">
-										<a href="cause-details.html">Helpo for Help</a>
-									</h3>
-									<p>
-										Gray eel-catfish longnose whiptail catfish smalleye
-										squaretail queen danio unicorn fish shortnose greeneye
-										fusilier fish silver carp
-									</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item">
-											<span>Goal: </span><span>25 000$</span>
-										</div>
-										<div class="projects-masonry__details-item">
-											<span>Date: </span><span>23 Jan'19</span>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -747,24 +680,9 @@
 							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
 						>
 							<div class="projects-masonry__img">
-								<img class="img--bg" src="img/projects_1.jpg" alt="img" />
+								<img class="img--bg" src="img/img4.jpg" alt="img" />
 								<div class="projects-masonry__inner">
-									<span class="projects-masonry__badge">Water Delivery</span>
-									<h3 class="projects-masonry__title">
-										<a href="cause-details.html">More than One Life Changed</a>
-									</h3>
-									<p>
-										Rockweed gunnel; candlefish mail-cheeked fish, yellowtail
-										snapper cuskfish elasmobranch seamoth triggerfish gar
-									</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item">
-											<span>Goal: </span><span>25 000$</span>
-										</div>
-										<div class="projects-masonry__details-item">
-											<span>Date: </span><span>23 Jan'19</span>
-										</div>
-									</div>
+									<span class="projects-masonry__badge">Appreciation Recieved</span>
 								</div>
 							</div>
 						</div>
@@ -772,25 +690,19 @@
 							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
 						>
 							<div class="projects-masonry__img">
-								<img class="img--bg" src="img/projects_2.jpg" alt="img" />
+								<img class="img--bg" src="img/img5.jpg" alt="img" />
 								<div class="projects-masonry__inner">
-									<span class="projects-masonry__badge">Medicine</span>
-									<h3 class="projects-masonry__title">
-										<a href="cause-details.html">Helpo for Help</a>
-									</h3>
-									<p>
-										Gray eel-catfish longnose whiptail catfish smalleye
-										squaretail queen danio unicorn fish shortnose greeneye
-										fusilier fish silver carp
-									</p>
-									<div class="projects-masonry__details-holder">
-										<div class="projects-masonry__details-item">
-											<span>Goal: </span><span>25 000$</span>
-										</div>
-										<div class="projects-masonry__details-item">
-											<span>Date: </span><span>23 Jan'19</span>
-										</div>
-									</div>
+									<span class="projects-masonry__badge">Medical Camp</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
+						>
+							<div class="projects-masonry__img">
+								<img class="img--bg" src="img/img6.jpg" alt="img" />
+								<div class="projects-masonry__inner">
+									<span class="projects-masonry__badge">Food Relief</span>
 								</div>
 							</div>
 						</div>
@@ -802,10 +714,10 @@
 									class="counter-item counter-item--style-3 no-margin-bottom"
 								>
 									<div class="counter-item__top">
-										<h6 class="counter-item__title">Closed Projects</h6>
+										<h6 class="counter-item__title">Successfull Projects</h6>
 									</div>
 									<div class="counter-item__lower">
-										<span class="js-counter">200</span><span>+</span>
+										<span class="js-counter" style="font-family: Quicksand, sans-serif">10</span><span style="font-family: Quicksand, sans-serif">+</span>
 									</div>
 								</div>
 							</div>
@@ -813,74 +725,104 @@
 					</div>
 				</section>
 				<!-- section end-->
+        <hr class="mt-5">
+
+        <!-- news sections -->
+        <div class="container my-5">
+            <h2 style="font-family: Quicksand, sans-serif">News Coverage</h2>
+        </div>
+        <div class="container my-5 d-flex flex-wrap justify-content-center align-items-center">
+          <div class="vid-1" style="width: 450px; margin-right: .5rem;">
+            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/bj-oJc0VhxU" title="Helping Star Foundation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="vid-2" style="width: 450px;">
+            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/VeC5bzubL3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center mb-5">
+          <iframe width="450px" height="300px" src="https://www.youtube.com/embed/6nOqSnXxcLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+
 				<!-- events start-->
 				<section class="section events">
 					<div class="container">
 						<div class="row margin-bottom">
 							<div class="col-12">
 								<div class="heading heading--primary heading--center">
-									<span class="heading__pre-title">Events</span>
+									<!-- <span class="heading__pre-title">Events</span> -->
 									<h2 class="heading__title">
-										<span>Helpo Holds</span> <span>for You</span>
+										<span>Helping Star Holds</span> <span>for You</span>
 									</h2>
 									<p class="no-margin-bottom">
-										Sharksucker sea toad candiru rocket danio tilefish stingray
-										deepwater stingray Sacramento splittail, Canthigaster
-										rostrata. Midshipman dartfish
+										We provide quality medical services in the areas we serve.
+										We have certified and well known doctors who are with us on
+										this estemed journey of helping people for good.
 									</p>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6 col-lg-4">
-								<div class="event-item">
-									<div class="event-item__img">
-										<img class="img--bg" src="img/event_1.jpg" alt="img" />
+							<div class="col-md-6 col-lg-3">
+								<div class="event-item" style="border-radius: 2rem;">
+									<div class="event-item__img" style="border-radius: 2rem;">
+										<img class="img--bg" src="img/doc2.jpeg" alt="img" />
 									</div>
 									<div class="event-item__content">
 										<h6 class="event-item__title">
-											<a href="#">Help for Language. Voluanteer</a>
+											<a href="#">Dr. Nathani Kumayl Sajjadhussain</a>
 										</h6>
-										<p><b>Dark Spurt,</b> San Francisco, CA 94528, USA</p>
-										<p><b>September 30 - October 31,</b> 2019</p>
-										<p><b>10:00 AM - 18:00 PM,</b> Everyday</p>
+										<p>MS ORTHOPAEDICS</p>
+										<p><b>Saturday</b></p>
+										<p><b>12:00 PM - 02:00 PM</b></p>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-4">
-								<div class="event-item">
-									<div class="event-item__img">
-										<img class="img--bg" src="img/event_2.jpg" alt="img" />
+							<div class="col-md-6 col-lg-3">
+								<div class="event-item" style="border-radius: 2rem;">
+									<div class="event-item__img" style="border-radius: 2rem;">
+										<img class="img--bg" src="img/doc1.jpeg" alt="img" />
 									</div>
 									<div class="event-item__content">
 										<h6 class="event-item__title">
-											<a href="#">The Culture of Africa. Rebirth</a>
+											<a href="#">Dr. Naved Memon</a>
 										</h6>
-										<p><b>Dark Spurt,</b> San Francisco, CA 94528, USA</p>
-										<p><b>September 30 - October 31,</b> 2019</p>
-										<p><b>10:00 AM - 18:00 PM,</b> Everyday</p>
+										<p>MBBS, DNB (Medicine)</p>
+										<p><b>Saturday</b></p>
+										<p><b>12:00 PM - 02:00 PM</b></p>
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 col-lg-4">
-								<div class="event-item">
-									<div class="event-item__img">
-										<img class="img--bg" src="img/event_3.jpg" alt="img" />
+							<div class="col-md-6 col-lg-3">
+								<div class="event-item" style="border-radius: 2rem;">
+									<div class="event-item__img" style="border-radius: 2rem;">
+										<img class="img--bg" src="img/doc3.jpeg" alt="img" />
 									</div>
 									<div class="event-item__content">
 										<h6 class="event-item__title">
-											<a href="#">Help for Language. Voluanteer</a>
+											<a href="#">Dr. Aysha Khan</a>
 										</h6>
-										<p><b>Dark Spurt,</b> San Francisco, CA 94528, USA</p>
-										<p><b>April 15 - April 20,</b> 2019</p>
-										<p><b>10:00 AM - 15:00 PM,</b> Everyday</p>
+										<p>MBBS, DNB (General Surgery)</p>
+										<p><b>Tuesday</b></p>
+										<p><b>12:00 PM - 02:00 PM</b></p>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="row">
-							<div class="col-12 text-center">
-								<a class="button button--blue" href="#">View all events</a>
+							<div class="col-md-6 col-lg-3">
+								<div class="event-item" style="border-radius: 2rem;">
+									<div class="event-item__img" style="border-radius: 2rem;">
+										<img class="img--bg" src="img/doc4.jpeg" alt="img" />
+									</div>
+									<div class="event-item__content">
+										<h6 class="event-item__title">
+											<a href="#">Dr. Rchi Agarwal</a>
+										</h6>
+										<p>MBBS, Gynac & Obst</p>
+										<p><b>Tuesday</b></p>
+										<p><b>12:00 PM - 02:00 PM</b></p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -920,13 +862,9 @@
 										<div class="testimonials-slider__icon">“</div>
 										<div class="testimonials-slider__text">
 											<p>
-												Slickhead grunion lake trout. Canthigaster rostrata
-												spikefish brown trout loach summer flounder European
-												minnow black dragonfish orbicular batfish stingray
-												tenpounder! Flying characin herring, Moses sole sea
-												snail grouper discus. European eel slender snipe eel.
-												Gulper eel dealfish ocean sunfish; rohu yellow-and-black
-												triplefin Atlantic saury
+												उरण शहरातील सामाजिक कार्य करणाऱ्या संस्थांपैकी हेल्पिंग स्टार फाउंडेशन ही संस्था समाजातील गरीब नागरिकांसाठी कार्यरत आहे.
+                        हेल्पिंग स्टार फाउंडेशन या संस्थेमार्फत कोविड बाधित रुग्णांना ऑक्सीजन सिलेंडर पुरविण्यात आले. शहरातील काही नागरिकांचे व्यवसाय नोकरी यावर परिणाम झाले असल्याने अशा लोकांवर उपासमारीची वेळ आली होती. अशा भयानक परिस्थितीत लोकांना मदत करण्यासाठी 
+                        शासन आणि इतर विविध सामाजिक संस्था तसेच  राजकीय पक्ष हे आपआपल्या सर्व ताकदीने लोकांना आवश्यक असे अन्न धान्य वाटप करीत होते अशा वेळी  हेल्पिंग स्टार फाउंडेशन या संस्थेमार्फत सुद्धा गरजू लोकांना अन्न धान्य आणि मोफत वैद्यकीय तपासणी करण्यात येत होती आणि आजही त्यांचे कार्य सुरळीत चालू आहे समाजाप्रती त्यांचे कार्य खूप मोलाचे आहे. कोणताही फायदा न घेता कार्य करणाऱ्या अशा संस्थानची समाजाला खूप गरज आहे.
 											</p>
 											<div class="testimonials-slider__author">
 												<span class="testimonials-slider__name"
@@ -941,22 +879,8 @@
 										<div class="testimonials-slider__icon">“</div>
 										<div class="testimonials-slider__text">
 											<p>
-												Slickhead grunion lake trout. Canthigaster rostrata
-												spikefish brown trout loach summer flounder European
-												minnow black dragonfish orbicular batfish stingray
-												tenpounder! Flying characin herring, Moses sole sea
-												snail grouper discus. European eel slender snipe eel.
-												Gulper eel dealfish ocean sunfish; rohu yellow-and-black
-												triplefin Atlantic saury
-											</p>
-											<p>
-												Slickhead grunion lake trout. Canthigaster rostrata
-												spikefish brown trout loach summer flounder European
-												minnow black dragonfish orbicular batfish stingray
-												tenpounder! Flying characin herring, Moses sole sea
-												snail grouper discus. European eel slender snipe eel.
-												Gulper eel dealfish ocean sunfish; rohu yellow-and-black
-												triplefin Atlantic saury
+												U guys are suberb 😍
+                        The way you work day night is vry helpfull for needy patients. During this covid pendamic your helping star foundation ws truely helpfull for me and many more patients… i m vry thankfull specially to Abrar bhai who has helped me alot recovering patients.
 											</p>
 											<div class="testimonials-slider__author">
 												<span class="testimonials-slider__name"
@@ -971,13 +895,9 @@
 										<div class="testimonials-slider__icon">“</div>
 										<div class="testimonials-slider__text">
 											<p>
-												Slickhead grunion lake trout. Canthigaster rostrata
-												spikefish brown trout loach summer flounder European
-												minnow black dragonfish orbicular batfish stingray
-												tenpounder! Flying characin herring, Moses sole sea
-												snail grouper discus. European eel slender snipe eel.
-												Gulper eel dealfish ocean sunfish; rohu yellow-and-black
-												triplefin Atlantic saury
+												Very happy to see this and I am very impressed with your khuloos
+                        I will try my best to help and support your work 
+                        Insha Allah
 											</p>
 											<div class="testimonials-slider__author">
 												<span class="testimonials-slider__name"
