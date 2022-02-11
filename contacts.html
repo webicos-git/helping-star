@@ -6,8 +6,8 @@
 		<meta name="keywords" content="keywords" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="shortcut icon" href="img/favicon.ico" />
-		<title>Helpo HTML Template</title>
+		<link rel="shortcut icon" href="img/logo.png" />
+		<title>Helping Star Foundation - Contact Us</title>
 		<!-- styles-->
 		<link rel="stylesheet" href="css/styles.min.css" />
 		<!-- web-font loader-->
@@ -140,8 +140,10 @@
 						<!-- aside menu end-->
 						<div class="aside-inner">
 							<span class="aside-inner__title">Email</span
-							><a class="aside-inner__link" href="mailto:support@helpo.org"
-								>support@helpo.org</a
+							><a
+								class="aside-inner__link"
+								href="mailto:contacthelpingstar@gmail.com"
+								>contacthelpingstar@gmail.com</a
 							>
 						</div>
 						<div class="aside-inner">
@@ -164,7 +166,7 @@
 						</ul>
 					</div>
 					<div class="aside-dropdown__item">
-						<a class="button button--squared" href="#"> <span>Donate</span></a>
+						<a class="button button--squared" data-toggle="modal" data-target="#donateModal" style="cursor: pointer;"> <span>Donate</span></a>
 					</div>
 				</div>
 			</div>
@@ -227,25 +229,54 @@
 							<div class="dropdown-trigger d-block d-sm-none">
 								<div class="dropdown-trigger__item"></div>
 							</div>
-							<a class="button button--squared" href="#"><span>Donate</span></a>
+							<a class="button button--squared" data-toggle="modal" data-target="#donateModal" style="cursor: pointer;"><span>Donate</span></a>
 						</div>
 					</div>
 				</div>
 			</header>
 			<!-- header end-->
+
+      <!-- modal of qr and bak details -->
+      <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Donate here</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body d-flex flex-column">
+              <p>Maximum limit to pay through QR code is 2000 Rs Only</p>
+              <img style="align-self: center;" src="/img/qr.jpeg" alt="helping star foundation qr code" width="250" height="250">
+              <p>To donate more than 2000 Rs directly do bank tranfer, details mentioned below:</p>
+              <p>Account Name: HELPING STAR FOUNDATION</p>
+              <p>Account Number: 498901010050419</p>
+              <p>IFSC Code: UBIN0549894</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
 			<main class="main">
 				<section class="promo-primary">
 					<picture>
-						<source srcset="img/contacts.jpg" media="(min-width: 992px)" />
-						<img class="img--bg" src="img/contacts.jpg" alt="img" />
+						<source srcset="img/bg/bg-3.png" media="(min-width: 992px)" />
+						<img class="img--bg" src="img/bg/bg-3.png" alt="img" />
 					</picture>
-					<div class="promo-primary__description"><span>Compassion</span></div>
+					<!-- <div class="promo-primary__description"><span>Compassion</span></div> -->
 					<div class="container">
 						<div class="row">
 							<div class="col-auto">
 								<div class="align-container">
 									<div class="align-container__item">
-										<span class="promo-primary__pre-title">Helping star</span>
+										<span class="promo-primary__pre-title">Helping Star Foundation</span>
 										<h1 class="promo-primary__title"><span>Contacts</span></h1>
 									</div>
 								</div>
@@ -285,6 +316,9 @@
 											<a class="icon-item__link" href="tel:9136217007"
 												>+91 91362 17007</a
 											>
+                      <a class="icon-item__link" href="tel:8828164848"
+												>+91 88281 64848</a
+											>
 										</p>
 									</div>
 								</div>
@@ -299,8 +333,10 @@
 									<div class="icon-item__text">
 										<p>
 											Email:
-											<a class="icon-item__link" href="mailto:support@helpo.org"
-												>support@helpo.org</a
+											<a
+												class="icon-item__link"
+												href="mailto:contacthelpingstar@gmail.com"
+												>contacthelpingstar@gmail.com</a
 											>
 										</p>
 									</div>
@@ -399,14 +435,9 @@
 								</div>
 							</div>
 						</div>
-						<div
-							class="contacts-wrapper__map"
-							id="map"
-							data-api-key="AIzaSyD5ES8GFHrarPhIVpDhFDea6fPtga0Wy4Y"
-							data-longitude="-73.935242"
-							data-latitude="40.730610"
-							data-marker="img/marker.png"
-						></div>
+						<div class="contacts-wrapper__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235.94722290150162!2d72.93701945058534!3d18.880178565751255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7dbc9f621fd7f%3A0x3281d30f0c9218bd!2sYuva%20Status%20IT%20Solutions!5e0!3m2!1sen!2sin!4v1644616642251!5m2!1sen!2sin" width="100%" height="100%" style="border:0; border-radius: 1rem" allowfullscreen="" loading="lazy"></iframe>
+          </div>
 					</div>
 				</section>
 				<!-- contacts end-->
@@ -426,7 +457,7 @@
 								<a class="footer-logo__link" href="index.html"
 									><img
 										class="footer-logo__img"
-										src="img/logo_white.png"
+										src="img/logo.png"
 										alt="logo"
 								/></a>
 							</div>
@@ -457,7 +488,9 @@
 								</p>
 								<p class="footer-contacts__mail">
 									Email:
-									<a href="mailto:support@helpo.org">support@helpo.org</a>
+									<a href="mailto:contacthelpingstar@gmail.com"
+										>contacthelpingstar@gmail.com</a
+									>
 								</p>
 							</div>
 						</div>
@@ -487,7 +520,7 @@
 						<div class="col-sm-6 col-lg-3">
 							<h4 class="footer__title">Donate</h4>
 							<p>Help Us Change the Lives of Children in our vicnity</p>
-							<a class="button footer__button button--filled" href="#"
+							<a class="button footer__button button--filled" data-toggle="modal" data-target="#donateModal" style="cursor: pointer;"
 								>Donate</a
 							>
 						</div>

@@ -6,8 +6,8 @@
 		<meta name="keywords" content="keywords" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="shortcut icon" href="img/favicon.ico" />
-		<title>Helpo HTML Template</title>
+		<link rel="shortcut icon" href="img/logo.png" />
+		<title>Helping Star Foundation - Gallery</title>
 		<!-- styles-->
 		<link rel="stylesheet" href="css/styles.min.css" />
 		<!-- web-font loader-->
@@ -140,8 +140,10 @@
 						<!-- aside menu end-->
 						<div class="aside-inner">
 							<span class="aside-inner__title">Email</span
-							><a class="aside-inner__link" href="mailto:support@helpo.org"
-								>support@helpo.org</a
+							><a
+								class="aside-inner__link"
+								href="mailto:contacthelpingstar@gmail.com"
+								>contacthelpingstar@gmail.com</a
 							>
 						</div>
 						<div class="aside-inner">
@@ -164,7 +166,7 @@
 						</ul>
 					</div>
 					<div class="aside-dropdown__item">
-						<a class="button button--squared" href="#"> <span>Donate</span></a>
+						<a class="button button--squared" data-toggle="modal" data-target="#donateModal" style="cursor: pointer;"> <span>Donate</span></a>
 					</div>
 				</div>
 			</div>
@@ -227,25 +229,54 @@
 							<div class="dropdown-trigger d-block d-sm-none">
 								<div class="dropdown-trigger__item"></div>
 							</div>
-							<a class="button button--squared" href="#"><span>Donate</span></a>
+							<a class="button button--squared" data-toggle="modal" data-target="#donateModal" style="cursor: pointer;"><span>Donate</span></a>
 						</div>
 					</div>
 				</div>
 			</header>
 			<!-- header end-->
+
+
+      <!-- modal of qr and bak details -->
+      <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Donate here</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body d-flex flex-column">
+              <p>Maximum limit to pay through QR code is 2000 Rs Only</p>
+              <img style="align-self: center;" src="/img/qr.jpeg" alt="helping star foundation qr code" width="250" height="250">
+              <p>To donate more than 2000 Rs directly do bank tranfer, details mentioned below:</p>
+              <p>Account Name: HELPING STAR FOUNDATION</p>
+              <p>Account Number: 498901010050419</p>
+              <p>IFSC Code: UBIN0549894</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
 			<main class="main">
 				<section class="promo-primary">
 					<picture>
-						<source srcset="img/gallery.jpg" media="(min-width: 992px)" />
-						<img class="img--bg" src="img/gallery.jpg" alt="img" />
+						<source srcset="img/bg/abt-bg.png" media="(min-width: 992px)" />
+						<img class="img--bg" src="img/bg/abt-bg.png" alt="img" />
 					</picture>
-					<div class="promo-primary__description"><span>Charity</span></div>
+					<!-- <div class="promo-primary__description"><span>Charity</span></div> -->
 					<div class="container">
 						<div class="row">
 							<div class="col-auto">
 								<div class="align-container">
 									<div class="align-container__item">
-										<span class="promo-primary__pre-title">Helping star</span>
+										<span class="promo-primary__pre-title" style="font-family: Quicksand, sans-serif;">Helping star</span>
 										<h1 class="promo-primary__title">
 											<span>Gallery</span> <span>Masonry</span>
 										</h1>
@@ -266,19 +297,19 @@
 										class="filter-panel__item filter-panel__item--active"
 										data-filter="*"
 									>
-										<span>All Causes</span>
+										<span>All</span>
 									</li>
 									<li class="filter-panel__item" data-filter=".category_1">
-										<span>Water Delivery</span>
+										<span>Our Appreciation</span>
 									</li>
 									<li class="filter-panel__item" data-filter=".category_2">
-										<span>Medicine</span>
+										<span>Certificates</span>
 									</li>
 									<li class="filter-panel__item" data-filter=".category_3">
-										<span>Education</span>
+										<span>Medical Aid</span>
 									</li>
 									<li class="filter-panel__item" data-filter=".category_4">
-										<span>Food</span>
+										<span>Food Relief</span>
 									</li>
 								</ul>
 								<!-- filter panel end-->
@@ -289,9 +320,9 @@
 						<div class="col-6 col-md-4 gallery-masonry__item category_1">
 							<a
 								class="gallery-masonry__img gallery-masonry__item--height-2"
-								href="img/gallery_1.jpg"
+								href="img/gallery/abt-bg.jpeg"
 								data-fancybox="gallery"
-								><img class="img--bg" src="img/gallery_1.jpg" alt="img" />
+								><img class="img--bg" src="img/gallery/abt-bg.jpeg" alt="img" />
 								<h6 class="gallery-masonry__description">
 									He Need Your Protection
 								</h6></a
@@ -300,90 +331,111 @@
 						<div class="col-6 col-md-4 gallery-masonry__item category_1">
 							<a
 								class="gallery-masonry__img gallery-masonry__item--height-2"
-								href="img/gallery_2.jpg"
+								href="img/gallery/abt.jpeg"
 								data-fancybox="gallery"
-								><img class="img--bg" src="img/gallery_2.jpg" alt="img" />
-								<h6 class="gallery-masonry__description">
-									He Need Your Protection
-								</h6></a
+								><img class="img--bg" src="img/gallery/abt.jpeg" alt="img" />
+								</a>
+						</div>
+						<div class="col-6 col-md-4 gallery-masonry__item category_2">
+							<a
+								class="gallery-masonry__img gallery-masonry__item--height-2"
+								href="img/gallery/gal-1.jpeg"
+								data-fancybox="gallery"
+								><img class="img--bg" src="img/gallery/gal-1.jpeg" alt="img" />
+								</a
 							>
 						</div>
 						<div class="col-6 col-md-4 gallery-masonry__item category_2">
 							<a
 								class="gallery-masonry__img gallery-masonry__item--height-2"
-								href="img/gallery_3.jpg"
+								href="img/gallery/gal-2.jpeg"
 								data-fancybox="gallery"
-								><img class="img--bg" src="img/gallery_3.jpg" alt="img" />
-								<h6 class="gallery-masonry__description">
-									He Need Your Protection
-								</h6></a
+								><img class="img--bg" src="img/gallery/gal-2.jpeg" alt="img" />
+								</a
 							>
 						</div>
-						<div class="col-6 col-md-4 gallery-masonry__item category_2">
-							<a
-								class="gallery-masonry__img gallery-masonry__item--height-2"
-								href="img/gallery_4.jpg"
-								data-fancybox="gallery"
-								><img class="img--bg" src="img/gallery_4.jpg" alt="img" />
-								<h6 class="gallery-masonry__description">
-									He Need Your Protection
-								</h6></a
-							>
-						</div>
-						<div class="col-6 col-md-8 gallery-masonry__item category_3">
+						<div class="col-6 col-md-8 gallery-masonry__item category_4">
 							<a
 								class="gallery-masonry__img gallery-masonry__item--height-1"
-								href="img/gallery_5.jpg"
+								href="img/gallery/gal-3.jpeg"
 								data-fancybox="gallery"
-								><img class="img--bg" src="img/gallery_5.jpg" alt="img" />
-								<h6 class="gallery-masonry__description">
-									He Need Your Protection
-								</h6></a
+								><img class="img--bg" src="img/gallery/gal-3.jpeg" alt="img" />
+								</a
 							>
 						</div>
 						<div class="col-6 col-md-4 gallery-masonry__item category_3">
 							<a
 								class="gallery-masonry__img gallery-masonry__item--height-2"
-								href="img/gallery_6.jpg"
+								href="img/gallery/gal-4.jpeg"
 								data-fancybox="gallery"
-								><img class="img--bg" src="img/gallery_6.jpg" alt="img" />
-								<h6 class="gallery-masonry__description">
-									He Need Your Protection
-								</h6></a
+								><img class="img--bg" src="img/gallery/gal-4.jpeg" alt="img" />
+								</a
 							>
 						</div>
-						<div class="col-6 col-md-8 gallery-masonry__item category_4">
+						<div class="col-6 col-md-8 gallery-masonry__item category_2">
 							<a
 								class="gallery-masonry__img gallery-masonry__item--height-3"
-								href="img/gallery_7.jpg"
+								href="img/gallery/gal-5.jpeg"
 								data-fancybox="gallery"
-								><img class="img--bg" src="img/gallery_7.jpg" alt="img" />
-								<h6 class="gallery-masonry__description">
-									He Need Your Protection
-								</h6></a
+								><img class="img--bg" src="img/gallery/gal-5.jpeg" alt="img" />
+								</a
 							>
 						</div>
 						<div class="col-6 col-md-4 gallery-masonry__item category_4">
 							<a
 								class="gallery-masonry__img gallery-masonry__item--height-2"
-								href="img/gallery_8.jpg"
+								href="img/gallery/gal-6.jpeg"
 								data-fancybox="gallery"
-								><img class="img--bg" src="img/gallery_8.jpg" alt="img" />
-								<h6 class="gallery-masonry__description">
-									He Need Your Protection
-								</h6></a
+								><img class="img--bg" src="img/gallery/gal-6.jpeg" alt="img" />
+								</a
 							>
 						</div>
-					</div>
-					<div class="container">
-						<div class="row">
-							<div class="col-12 text-center">
-								<a class="button gallery__button button--blue" href="#"
-									>More Images</a
-								>
-							</div>
+            <div class="col-6 col-md-4 gallery-masonry__item category_1">
+							<a
+								class="gallery-masonry__img gallery-masonry__item--height-2"
+								href="img/gallery/gal-7.jpeg"
+								data-fancybox="gallery"
+								><img class="img--bg" src="img/gallery/gal-7.jpeg" alt="img" />
+								</a
+							>
 						</div>
-					</div>
+            <div class="col-6 col-md-4 gallery-masonry__item category_3">
+							<a
+								class="gallery-masonry__img gallery-masonry__item--height-2"
+								href="img/gallery/img3.jpg"
+								data-fancybox="gallery"
+								><img class="img--bg" src="img/gallery/img3.jpg" alt="img" />
+								</a
+							>
+						</div>
+            <div class="col-6 col-md-4 gallery-masonry__item category_3">
+							<a
+								class="gallery-masonry__img gallery-masonry__item--height-2"
+								href="img/gallery/img5.jpg"
+								data-fancybox="gallery"
+								><img class="img--bg" src="img/gallery/img5.jpg" alt="img" />
+								</a
+							>
+						</div>
+            <div class="col-6 col-md-4 gallery-masonry__item category_3">
+							<a
+								class="gallery-masonry__img gallery-masonry__item--height-2"
+								href="img/gallery/img7.jpg"
+								data-fancybox="gallery"
+								><img class="img--bg" src="img/gallery/img7.jpg" alt="img" />
+								</a
+							>
+						</div>
+            <div class="col-6 col-md-4 gallery-masonry__item category_4">
+							<a
+								class="gallery-masonry__img gallery-masonry__item--height-2"
+								href="img/gallery/gal-01.jpeg"
+								data-fancybox="gallery"
+								><img class="img--bg" src="img/gallery/gal-01.jpeg" alt="img" />
+								</a
+							>
+						</div>
+					</div>  
 				</section>
 				<!-- gallery end-->
 			</main>
@@ -396,7 +448,7 @@
 								<a class="footer-logo__link" href="index.html"
 									><img
 										class="footer-logo__img"
-										src="img/logo_white.png"
+										src="img/logo.png"
 										alt="logo"
 								/></a>
 							</div>
@@ -427,7 +479,9 @@
 								</p>
 								<p class="footer-contacts__mail">
 									Email:
-									<a href="mailto:support@helpo.org">support@helpo.org</a>
+									<a href="mailto:contacthelpingstar@gmail.com"
+										>contacthelpingstar@gmail.com</a
+									>
 								</p>
 							</div>
 						</div>
@@ -457,7 +511,7 @@
 						<div class="col-sm-6 col-lg-3">
 							<h4 class="footer__title">Donate</h4>
 							<p>Help Us Change the Lives of Children in our vicinity</p>
-							<a class="button footer__button button--filled" href="#"
+							<a class="button footer__button button--filled" data-toggle="modal" data-target="#donateModal" style="cursor: pointer;"
 								>Donate</a
 							>
 						</div>

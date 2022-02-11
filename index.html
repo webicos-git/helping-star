@@ -6,8 +6,8 @@
 		<meta name="keywords" content="keywords" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<link rel="shortcut icon" href="img/favicon.ico" />
-		<title>Helpo HTML Template</title>
+		<link rel="shortcut icon" href="img/logo.png" />
+		<title>Helping Star Foundation - Home</title>
 		<!-- styles-->
 		<link rel="stylesheet" href="css/styles.min.css" />
 		<!-- web-font loader-->
@@ -140,8 +140,10 @@
 						<!-- aside menu end-->
 						<div class="aside-inner">
 							<span class="aside-inner__title">Email</span
-							><a class="aside-inner__link" href="mailto:support@helpo.org"
-								>support@helpo.org</a
+							><a
+								class="aside-inner__link"
+								href="mailto:contacthelpingstar@gmail.com"
+								>contacthelpingstar@gmail.com</a
 							>
 						</div>
 						<div class="aside-inner">
@@ -164,7 +166,7 @@
 						</ul>
 					</div>
 					<div class="aside-dropdown__item">
-						<a class="button button--squared" href="#"> <span>Donate</span></a>
+						<a class="button button--squared" data-toggle="modal" data-target="#donateModal" style="cursor: pointer;"> <span>Donate</span></a>
 					</div>
 				</div>
 			</div>
@@ -227,11 +229,37 @@
 							<div class="dropdown-trigger d-block d-sm-none">
 								<div class="dropdown-trigger__item"></div>
 							</div>
-							<a class="button button--squared" href="#"><span>Donate</span></a>
+							<a class="button button--squared" data-toggle="modal" data-target="#donateModal" style="cursor: pointer;"><span>Donate</span></a>
 						</div>
 					</div>
 				</div>
 			</header>
+      <!-- modal of qr and bak details -->
+      <div class="modal fade" id="donateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Donate here</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body d-flex flex-column">
+              <p>Maximum limit to pay through QR code is 2000 Rs Only</p>
+              <img style="align-self: center;" src="/img/qr.jpeg" alt="helping star foundation qr code" width="250" height="250">
+              <p>To donate more than 2000 Rs directly do bank tranfer, details mentioned below:</p>
+              <p>Account Name: HELPING STAR FOUNDATION</p>
+              <p>Account Number: 498901010050419</p>
+              <p>IFSC Code: UBIN0549894</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 			<!-- header end-->
 			<main class="main">
 				<!-- promo start-->
@@ -359,8 +387,10 @@
 						</div>
 						<div class="promo-pannel__email">
 							<p class="promo-pannel__title">Email</p>
-							<a class="promo-pannel__link" href="mailto:support@helpo.org"
-								>support@helpo.org</a
+							<a
+								class="promo-pannel__link"
+								href="mailto:contacthelpingstar@gmail.com"
+								>contacthelpingstar@gmail.com</a
 							>
 						</div>
 						<div class="promo-pannel__socials">
@@ -652,7 +682,10 @@
 							<div class="projects-masonry__img">
 								<img class="img--bg" src="img/img1.png" alt="img" />
 								<div class="projects-masonry__inner">
-									<span class="projects-masonry__badge">Medical Relief</span>
+                  <a href="gallery.html">
+                    <span class="projects-masonry__badge">Medical Relief</span>
+
+                  </a>
 								</div>
 							</div>
 						</div>
@@ -662,31 +695,27 @@
 							<div class="projects-masonry__img">
 								<img class="img--bg" src="img/img2.jpg" alt="img" />
 								<div class="projects-masonry__inner">
+                  <a href="gallery.html">
 									<span class="projects-masonry__badge">Disaster relief</span>
+                </a>
 								</div>
 							</div>
 						</div>
+
 						<div
 							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
 						>
 							<div class="projects-masonry__img">
-								<img class="img--bg" src="img/img3.jpg" alt="img" />
+                  <img class="img--bg" src="img/img4.jpg" alt="img" />
 								<div class="projects-masonry__inner">
-									<span class="projects-masonry__badge">Medicine</span>
+                  <a href="gallery.html">
+                    <span class="projects-masonry__badge">Appreciation Recieved</span>
+                    
+                  </a>
 								</div>
 							</div>
 						</div>
-						<div
-							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
-						>
-							<div class="projects-masonry__img">
-								<img class="img--bg" src="img/img4.jpg" alt="img" />
-								<div class="projects-masonry__inner">
-									<span class="projects-masonry__badge">Appreciation Recieved</span>
-								</div>
-							</div>
-						</div>
-						<div
+						<!-- <div
 							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
 						>
 							<div class="projects-masonry__img">
@@ -695,14 +724,16 @@
 									<span class="projects-masonry__badge">Medical Camp</span>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<div
 							class="col-lg-6 col-xl-4 projects-masonry__item projects-masonry__item--height-2 projects-masonry__item--primary"
 						>
 							<div class="projects-masonry__img">
 								<img class="img--bg" src="img/img6.jpg" alt="img" />
 								<div class="projects-masonry__inner">
-									<span class="projects-masonry__badge">Food Relief</span>
+                  <a href="gallery.html">
+									  <span class="projects-masonry__badge">Food Relief</span>
+                  </a>
 								</div>
 							</div>
 						</div>
@@ -717,7 +748,11 @@
 										<h6 class="counter-item__title">Successfull Projects</h6>
 									</div>
 									<div class="counter-item__lower">
-										<span class="js-counter" style="font-family: Quicksand, sans-serif">10</span><span style="font-family: Quicksand, sans-serif">+</span>
+										<span
+											class="js-counter"
+											style="font-family: Quicksand, sans-serif"
+											>10</span
+										><span style="font-family: Quicksand, sans-serif">+</span>
 									</div>
 								</div>
 							</div>
@@ -725,25 +760,51 @@
 					</div>
 				</section>
 				<!-- section end-->
-        <hr class="mt-5">
+				<hr class="mt-5" />
 
-        <!-- news sections -->
-        <div class="container my-5">
-            <h2 style="font-family: Quicksand, sans-serif">News Coverage</h2>
-        </div>
-        <div class="container my-5 d-flex flex-wrap justify-content-center align-items-center">
-          <div class="vid-1" style="width: 450px; margin-right: .5rem;">
-            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/bj-oJc0VhxU" title="Helping Star Foundation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <div class="vid-2" style="width: 450px;">
-            <iframe width="100%" height="300px" src="https://www.youtube.com/embed/VeC5bzubL3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="container d-flex justify-content-center align-items-center mb-5">
-          <iframe width="450px" height="300px" src="https://www.youtube.com/embed/6nOqSnXxcLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-
+				<!-- news sections -->
+				<div class="container my-5">
+					<h2 style="font-family: Quicksand, sans-serif">News Coverage</h2>
+				</div>
+				<div
+					class="container my-5 d-flex flex-wrap justify-content-center align-items-center"
+				>
+					<div class="vid-1" style="width: 450px; margin-right: 0.5rem">
+						<iframe
+							width="100%"
+							height="300px"
+							src="https://www.youtube.com/embed/bj-oJc0VhxU"
+							title="Helping Star Foundation"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+					<div class="vid-2" style="width: 450px">
+						<iframe
+							width="100%"
+							height="300px"
+							src="https://www.youtube.com/embed/VeC5bzubL3U"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+				<div
+					class="container d-flex justify-content-center align-items-center mb-5"
+				>
+					<iframe
+						width="450px"
+						height="300px"
+						src="https://www.youtube.com/embed/6nOqSnXxcLQ"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
 
 				<!-- events start-->
 				<section class="section events">
@@ -765,13 +826,13 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-lg-3">
-								<div class="event-item" style="border-radius: 2rem;">
-									<div class="event-item__img" style="border-radius: 2rem;">
+								<div class="event-item" style="border-radius: 2rem">
+									<div class="event-item__img" style="border-radius: 2rem">
 										<img class="img--bg" src="img/doc2.jpeg" alt="img" />
 									</div>
 									<div class="event-item__content">
 										<h6 class="event-item__title">
-											<a href="#">Dr. Nathani Kumayl Sajjadhussain</a>
+											<a href="#">Dr. Nathani Sajjadhussain</a>
 										</h6>
 										<p>MS ORTHOPAEDICS</p>
 										<p><b>Saturday</b></p>
@@ -780,8 +841,8 @@
 								</div>
 							</div>
 							<div class="col-md-6 col-lg-3">
-								<div class="event-item" style="border-radius: 2rem;">
-									<div class="event-item__img" style="border-radius: 2rem;">
+								<div class="event-item" style="border-radius: 2rem">
+									<div class="event-item__img" style="border-radius: 2rem">
 										<img class="img--bg" src="img/doc1.jpeg" alt="img" />
 									</div>
 									<div class="event-item__content">
@@ -790,13 +851,13 @@
 										</h6>
 										<p>MBBS, DNB (Medicine)</p>
 										<p><b>Saturday</b></p>
-										<p><b>12:00 PM - 02:00 PM</b></p>
+										<p class="pb-4"><b>12:00 PM - 02:00 PM</b></p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 col-lg-3">
-								<div class="event-item" style="border-radius: 2rem;">
-									<div class="event-item__img" style="border-radius: 2rem;">
+								<div class="event-item" style="border-radius: 2rem">
+									<div class="event-item__img" style="border-radius: 2rem">
 										<img class="img--bg" src="img/doc3.jpeg" alt="img" />
 									</div>
 									<div class="event-item__content">
@@ -805,13 +866,13 @@
 										</h6>
 										<p>MBBS, DNB (General Surgery)</p>
 										<p><b>Tuesday</b></p>
-										<p><b>12:00 PM - 02:00 PM</b></p>
+										<p class="pb-4"><b>12:00 PM - 02:00 PM</b></p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 col-lg-3">
-								<div class="event-item" style="border-radius: 2rem;">
-									<div class="event-item__img" style="border-radius: 2rem;">
+								<div class="event-item" style="border-radius: 2rem">
+									<div class="event-item__img" style="border-radius: 2rem">
 										<img class="img--bg" src="img/doc4.jpeg" alt="img" />
 									</div>
 									<div class="event-item__content">
@@ -820,7 +881,7 @@
 										</h6>
 										<p>MBBS, Gynac & Obst</p>
 										<p><b>Tuesday</b></p>
-										<p><b>12:00 PM - 02:00 PM</b></p>
+										<p class="pb-4"><b>12:00 PM - 02:00 PM</b></p>
 									</div>
 								</div>
 							</div>
@@ -862,9 +923,56 @@
 										<div class="testimonials-slider__icon">“</div>
 										<div class="testimonials-slider__text">
 											<p>
-												उरण शहरातील सामाजिक कार्य करणाऱ्या संस्थांपैकी हेल्पिंग स्टार फाउंडेशन ही संस्था समाजातील गरीब नागरिकांसाठी कार्यरत आहे.
-                        हेल्पिंग स्टार फाउंडेशन या संस्थेमार्फत कोविड बाधित रुग्णांना ऑक्सीजन सिलेंडर पुरविण्यात आले. शहरातील काही नागरिकांचे व्यवसाय नोकरी यावर परिणाम झाले असल्याने अशा लोकांवर उपासमारीची वेळ आली होती. अशा भयानक परिस्थितीत लोकांना मदत करण्यासाठी 
-                        शासन आणि इतर विविध सामाजिक संस्था तसेच  राजकीय पक्ष हे आपआपल्या सर्व ताकदीने लोकांना आवश्यक असे अन्न धान्य वाटप करीत होते अशा वेळी  हेल्पिंग स्टार फाउंडेशन या संस्थेमार्फत सुद्धा गरजू लोकांना अन्न धान्य आणि मोफत वैद्यकीय तपासणी करण्यात येत होती आणि आजही त्यांचे कार्य सुरळीत चालू आहे समाजाप्रती त्यांचे कार्य खूप मोलाचे आहे. कोणताही फायदा न घेता कार्य करणाऱ्या अशा संस्थानची समाजाला खूप गरज आहे.
+												उरण शहरातील सामाजिक कार्य करणाऱ्या संस्थांपैकी हेल्पिंग
+												स्टार फाउंडेशन ही संस्था समाजातील गरीब नागरिकांसाठी
+												कार्यरत आहे. हेल्पिंग स्टार फाउंडेशन या संस्थेमार्फत
+												कोविड बाधित रुग्णांना ऑक्सीजन सिलेंडर पुरविण्यात आले.
+												शहरातील काही नागरिकांचे व्यवसाय नोकरी यावर परिणाम झाले
+												असल्याने अशा लोकांवर उपासमारीची वेळ आली होती. अशा भयानक
+												परिस्थितीत लोकांना मदत करण्यासाठी शासन आणि इतर विविध
+												सामाजिक संस्था तसेच राजकीय पक्ष हे आपआपल्या सर्व ताकदीने
+												लोकांना आवश्यक असे अन्न धान्य वाटप करीत होते अशा वेळी
+												हेल्पिंग स्टार फाउंडेशन या संस्थेमार्फत सुद्धा गरजू
+												लोकांना अन्न धान्य आणि मोफत वैद्यकीय तपासणी करण्यात येत
+												होती आणि आजही त्यांचे कार्य सुरळीत चालू आहे समाजाप्रती
+												त्यांचे कार्य खूप मोलाचे आहे. कोणताही फायदा न घेता कार्य
+												करणाऱ्या अशा संस्थानची समाजाला खूप गरज आहे.
+											</p>
+											<div class="testimonials-slider__author">
+												<span class="testimonials-slider__name"
+													>Sanjay Pawar, </span
+												><span class="testimonials-slider__position"
+													>Personnel at Uran Municipal Council</span
+												>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials-slider__item">
+										<div class="testimonials-slider__icon">“</div>
+										<div class="testimonials-slider__text">
+											<p>
+												U guys are suberb 😍 The way you work day night is vry
+												helpfull for needy patients. During this covid pendamic
+												your helping star foundation ws truely helpfull for me
+												and many more patients… i m vry thankfull specially to
+												Abrar bhai who has helped me alot recovering patients.
+											</p>
+											<div class="testimonials-slider__author">
+												<span class="testimonials-slider__name"
+													>Bhushan Bhate, </span
+												><span class="testimonials-slider__position"
+													>Social worker Uran</span
+												>
+											</div>
+										</div>
+									</div>
+									<div class="testimonials-slider__item">
+										<div class="testimonials-slider__icon">“</div>
+										<div class="testimonials-slider__text">
+											<p>
+												Very happy to see this and I am very impressed with your
+												khuloos I will try my best to help and support your work
+												Insha Allah
 											</p>
 											<div class="testimonials-slider__author">
 												<span class="testimonials-slider__name"
@@ -879,31 +987,14 @@
 										<div class="testimonials-slider__icon">“</div>
 										<div class="testimonials-slider__text">
 											<p>
-												U guys are suberb 😍
-                        The way you work day night is vry helpfull for needy patients. During this covid pendamic your helping star foundation ws truely helpfull for me and many more patients… i m vry thankfull specially to Abrar bhai who has helped me alot recovering patients.
+												आपण उरण वासियांना उत्तम सेवा देण्यासाठी जे प्रयत्न करत
+												आहात त्याबद्दल आपले मनापासून अभिनंदन.....🙏
 											</p>
 											<div class="testimonials-slider__author">
 												<span class="testimonials-slider__name"
-													>Jack Wolfskin, </span
+													>Santosh Pawar, </span
 												><span class="testimonials-slider__position"
-													>Volunteer</span
-												>
-											</div>
-										</div>
-									</div>
-									<div class="testimonials-slider__item">
-										<div class="testimonials-slider__icon">“</div>
-										<div class="testimonials-slider__text">
-											<p>
-												Very happy to see this and I am very impressed with your khuloos
-                        I will try my best to help and support your work 
-                        Insha Allah
-											</p>
-											<div class="testimonials-slider__author">
-												<span class="testimonials-slider__name"
-													>Jack Wolfskin, </span
-												><span class="testimonials-slider__position"
-													>Volunteer</span
+													>Social worker Uran</span
 												>
 											</div>
 										</div>
@@ -952,7 +1043,9 @@
 								</p>
 								<p class="footer-contacts__mail">
 									Email:
-									<a href="mailto:support@helpo.org">support@helpo.org</a>
+									<a href="mailto:contacthelpingstar@gmail.com"
+										>contacthelpingstar@gmail.com</a
+									>
 								</p>
 							</div>
 						</div>
@@ -982,7 +1075,7 @@
 						<div class="col-sm-6 col-lg-3">
 							<h4 class="footer__title">Donate</h4>
 							<p>Help Us Change the Lives of Children in our vicinity</p>
-							<a class="button footer__button button--filled" href="#"
+							<a class="button footer__button button--filled" data-toggle="modal" data-target="#donateModal" style="cursor: pointer;"
 								>Donate</a
 							>
 						</div>
