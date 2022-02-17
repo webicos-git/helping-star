@@ -11,6 +11,55 @@
 		<!-- styles-->
 		<link rel="stylesheet" href="css/styles.min.css" />
 		<!-- web-font loader-->
+    <style>
+      .slider {
+				width: 100%;
+				margin: 20px auto;
+				text-align: center;
+				padding: 20px;
+				color: white;
+			}
+			.slide {
+				width: 100%;
+			}
+			.slider img {
+				display: block;
+				margin: auto;
+				width: 80%;
+				height: 500px;
+				border-radius: 2rem;
+			}
+			@media screen and (max-width: 768px) {
+				.slider img {
+					width: 100%;
+					height: 250px;
+				}
+				.slide {
+					margin-right: 2rem;
+				}
+				.slide h1 {
+					font-size: 1rem;
+				}
+			}
+			.parent-slide {
+				padding: 15px;
+			}
+    </style>
+    <script>
+			window.onload = function () {
+				$(".slider").slick({
+					autoplay: true,
+					autoplaySpeed: 2000,
+					arrows: false,
+					// prevArrow:'<button type="button" class="slick-prev"></button>',
+					// nextArrow:'<button type="button" class="slick-next"></button>',
+					centerMode: true,
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				});
+			};
+			slick();
+		</script>
 		<script>
 			WebFontConfig = {
 				google: {
@@ -836,68 +885,26 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-6 col-lg-3">
-								<div class="event-item" style="border-radius: 2rem">
-									<div class="event-item__img" style="border-radius: 2rem">
-										<img class="img--bg" src="img/doc2.jpeg" alt="img" />
-									</div>
-									<div class="event-item__content">
-										<h6 class="event-item__title">
-											<a href="#">Dr. Nathani Sajjadhussain</a>
-										</h6>
-										<p>MS ORTHOPAEDICS</p>
-										<p><b>Saturday</b></p>
-										<p><b>12:00 PM - 02:00 PM</b></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="event-item" style="border-radius: 2rem">
-									<div class="event-item__img" style="border-radius: 2rem">
-										<img class="img--bg" src="img/doc1.jpeg" alt="img" />
-									</div>
-									<div class="event-item__content">
-										<h6 class="event-item__title">
-											<a href="#">Dr. Naved Memon</a>
-										</h6>
-										<p>MBBS, DNB (Medicine)</p>
-										<p><b>Saturday</b></p>
-										<p class="pb-4"><b>12:00 PM - 02:00 PM</b></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="event-item" style="border-radius: 2rem">
-									<div class="event-item__img" style="border-radius: 2rem">
-										<img class="img--bg" src="img/doc3.jpeg" alt="img" />
-									</div>
-									<div class="event-item__content">
-										<h6 class="event-item__title">
-											<a href="#">Dr. Aysha Khan</a>
-										</h6>
-										<p>MBBS, DNB (General Surgery)</p>
-										<p><b>Tuesday</b></p>
-										<p class="pb-4"><b>12:00 PM - 02:00 PM</b></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-lg-3">
-								<div class="event-item" style="border-radius: 2rem">
-									<div class="event-item__img" style="border-radius: 2rem">
-										<img class="img--bg" src="img/doc4.jpeg" alt="img" />
-									</div>
-									<div class="event-item__content">
-										<h6 class="event-item__title">
-											<a href="#">Dr. Rchi Agarwal</a>
-										</h6>
-										<p>MBBS, Gynac & Obst</p>
-										<p><b>Tuesday</b></p>
-										<p class="pb-4"><b>12:00 PM - 02:00 PM</b></p>
-									</div>
-								</div>
-							</div>
-						</div>
+            <!-- start carousal -->
+            <div class="slider">
+              <div class="slide">
+                <img src="img/doc2.jpeg" alt="" class="img-fluid" />
+              </div>
+              <div class="slide">
+                <img src="img/doc1.jpeg" alt="" class="img-fluid" />
+              </div>
+              <div class="slide">
+                <img src="img/doc3.jpeg" alt="" class="img-fluid" />
+              </div>
+              <div class="slide">
+                <img src="img/doc4.jpeg" alt="" class="img-fluid" />
+              </div>
+            </div>
+
+            <!-- end carousal -->
+
+
+					
 					</div>
 				</section>
 				<!-- events end-->
